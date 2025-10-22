@@ -1,1 +1,52 @@
-# practica10.github.io
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Imagen Información</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <main id="tarjeta">
+        <div class="receta-item">
+            <img src="img/pastel2.jpg" alt="pastel tres leches" id="img-pastel" onclick="mostrarReceta('info-tresleches')">
+
+            <div id="info-tresleches" class="info-receta">
+                <div class="receta-contenido">
+                    <div class="contenido-dividido">
+                        <div class="receta-texto">
+                            <h1>Pastel de Tres Leches</h1>
+                            <h3>Ingredientes:</h3>
+                            <ul>
+                                <li>1 taza de harina</li>
+                                <li>1 1/2 cucharadita de polvo para hornear</li>
+                                <li>4 huevos</li>
+                                <li>1 taza de azúcar</li>
+                                <li>1/3 taza de leche</li>
+                                <li>1 lata de leche condensada</li>
+                                <li>1 lata de leche evaporada</li>
+                                <li>1 taza de crema para batir</li>
+                                <li>1 cucharadita de extracto de vainilla</li>
+                            </ul>
+                            <h3>Procedimiento:</h3>
+                            Se baten los huevos con el azúcar hasta obtener una mezcla esponjosa. 
+                            Se agregan la harina y el polvo para hornear tamizados, alternando con la leche. 
+                            Se hornea a 180 grados centígrados por 25-30 minutos. 
+                            Una vez frío, se perfora el pastel y se vierte la mezcla de las tres leches (leche condensada, evaporada y crema para batir con vainilla). 
+                            Refrigerar por al menos 4 horas antes de servir.
+                        </div>
+                    </div>
+
+                    <div class="receta-imagen">
+                        <img src="img/preparacion.jpg">
+                    </div>
+                </div>
+
+                <button class="boton-cerrar" onclick="cerrarReceta('info-tresleches')">Cerrar Receta</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="ejecucion.js"></script>
+</body>
+</html>
+
