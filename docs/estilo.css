@@ -1,1 +1,66 @@
+/* Diseño general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(233, 100, 162);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilo de la imagen del pastel */
+.imagen-pastel {
+    width: 100%;
+    max-width: 400px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imagen-pastel:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo de la tarjeta de información */
+.informacion {
+    display: none;
+    background-color: #e271b3;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    padding: 20px;
+    text-align: left;
+}
+
+.informacion h2 {
+    color: #000000;
+}
+
+.informacion ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.informacion ul li {
+    margin: 10px 0;
+}
+
+.informacion button {
+    background-color: #f387e1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.informacion button:hover {
+    background-color: #f387e1;
+}
 
