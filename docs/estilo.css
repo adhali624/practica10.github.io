@@ -1,66 +1,85 @@
-/* Diseño general */
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(233, 100, 162);
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 40px;
+  text-align: center;
 }
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+/* Imagen principal */
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+.imagen {
+  width: 350px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform .3s ease;
+}
+.imagen:hover {
+  transform: scale(1.05);
 }
 
-/* Estilo de la imagen del pastel */
-.imagen-pastel {
-    width: 100%;
-    max-width: 400px;
-    cursor: pointer;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+/* Panel de información */
+.panel {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
 }
 
-.imagen-pastel:hover {
-    transform: scale(1.05);
+/* Tarjeta blanca con sombra */
+.tarjeta {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  width: 80%;
+  max-width: 850px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
-/* Estilo de la tarjeta de información */
-.informacion {
-    display: none;
-    background-color: #e271b3;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    padding: 20px;
-    text-align: left;
+/* Sección de texto */
+.texto {
+  text-align: left;
+  padding: 30px;
+  width: 60%;
+}
+.texto h2 {
+  margin-top: 0;
+}
+.texto h3 {
+  margin-bottom: 5px;
+}
+.texto ul {
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
-.informacion h2 {
-    color: #000000;
+/* Imagen lateral */
+.imagen-lado img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.informacion ul {
-    list-style-type: none;
-    padding: 0;
+/* Botón rojo */
+#cerrarBtn {
+  background: #d32f2f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
 }
-
-.informacion ul li {
-    margin: 10px 0;
+#cerrarBtn:hover {
+  background: #b71c1c;
 }
-
-.informacion button {
-    background-color: #f387e1;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.informacion button:hover {
-    background-color: #f387e1;
-}
-
