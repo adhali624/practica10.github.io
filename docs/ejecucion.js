@@ -1,17 +1,14 @@
-function mostrarReceta(idReceta){
-    const panel = document.getElementById(idReceta);
+const imagen = document.getElementById("imagen");
+const panel = document.getElementById("panel");
+const cerrarBtn = document.getElementById("cerrarBtn");
 
-    if(panel){
-        panel.style.display = 'flex';
-        panel.style.justifyContent = 'center';
-        panel.style.alignItems = 'center';
-    }
+function mostrarReceta() {
+  panel.style.display = "flex";
 }
 
-function cerrarReceta(idReceta){
-    const panel = document.getElementById(idReceta);
-
-    if(panel){
-        panel.style.display = 'none';
-    }
+function cerrarReceta() {
+  panel.style.display = "none";
 }
+
+imagen.addEventListener("click", mostrarReceta);
+cerrarBtn.addEventListener("click", cerrarReceta);
